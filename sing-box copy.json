@@ -188,13 +188,6 @@
         "outbound": "cn"
       },
       {
-        "rule_set": [
-          "geolocation-!cn",
-          "geoip-cn"
-        ],
-        "outbound": "cn"
-      },
-      {
         "rule_set": "geolocation-!cn",
         "outbound": "proxy"
       },
