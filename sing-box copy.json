@@ -53,7 +53,7 @@
         "server": "block"
       },
       {
-        "rule_set": "geosite-geolocation-cn",
+        "rule_set": "geosite-cn",
         "server": "local"
       },
       {
@@ -61,7 +61,7 @@
         "mode": "and",
         "rules": [
           {
-            "rule_set": "geosite-geolocation-!cn"
+            "rule_set": "geolocation-!cn"
           },
           {
             "rule_set": "geoip-cn"
@@ -162,6 +162,13 @@
         "outbound": "cn"
       },
       {
+        "rule_set": [
+          "geolocation-!cn",
+          "geoip-cn"
+        ],
+        "outbound": "cn"
+      },
+      {
         "rule_set": "geolocation-!cn",
         "outbound": "proxy"
       },
@@ -246,13 +253,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geosite/youtube.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "tag": "geosite-geolocation-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs",
         "download_detour": "proxy"
       },
       {
