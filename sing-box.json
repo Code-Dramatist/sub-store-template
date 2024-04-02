@@ -613,6 +613,11 @@
       "listen": "127.0.0.1",
       "listen_port": 7890,
       "sniff": true
+    },
+    {
+      "type": "direct",
+      "listen": "::",
+      "listen_port": 9090
     }
   ],
   "experimental": {
