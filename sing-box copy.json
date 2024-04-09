@@ -10,14 +10,14 @@
         "tag": "local",
         "address": "https://223.5.5.5/dns-query",
         "address_resolver": "dns_resolver",
-        "strategy": "prefer_ipv4",
+        "strategy": "ipv4_only",
         "detour": "direct"
       },
       {
         "tag": "cloudflare",
         "address": "https://1.1.1.1/dns-query",
         "address_resolver": "dns_resolver",
-        "strategy": "prefer_ipv4",
+        "strategy": "ipv4_only",
         "detour": "proxy"
       },
       {
@@ -55,19 +55,6 @@
       {
         "rule_set": "geosite-cn",
         "server": "local"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": "geolocation-!cn"
-          },
-          {
-            "rule_set": "geoip-cn"
-          }
-        ],
-        "server": "cloudflare"
       },
       {
         "query_type": [
