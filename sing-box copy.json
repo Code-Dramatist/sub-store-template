@@ -72,6 +72,20 @@
         "server": "local"
       },
       {
+        "domain_suffix": [
+          "edu.cn",
+          "gov.cn",
+          "mil.cn",
+          "ac.cn",
+          "com.cn",
+          "net.cn",
+          "org.cn",
+          "中国",
+          "中國"
+        ],
+        "server": "local"
+      },
+      {
         "query_type": [
           "A",
           "AAAA"
