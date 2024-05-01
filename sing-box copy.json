@@ -58,20 +58,6 @@
         "server": "local"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": "geosite-geolocation-!cn",
-            "invert": true
-          },
-          {
-            "rule_set": "geoip-cn"
-          }
-        ],
-        "server": "local"
-      },
-      {
         "domain_suffix": [
           "edu.cn",
           "gov.cn",
@@ -84,6 +70,21 @@
           "中國"
         ],
         "server": "local"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
+        "server": "cloudflare",
+        "client_subnet": "114.114.114.114"
       },
       {
         "query_type": [
