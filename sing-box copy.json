@@ -171,6 +171,11 @@
         "outbound": "block"
       },
       {
+        "protocol": "quic",
+        "port": 22000,
+        "outbound": "direct"
+      },
+      {
         "ip_is_private": true,
         "outbound": "direct"
       },
