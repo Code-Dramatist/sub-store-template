@@ -107,8 +107,22 @@
       "inet4_address": "172.19.0.1/30",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "stack": "system",
-      "auto_route": true,
       "sniff": true,
+      "auto_route": true,
+      "inet4_route_address": [
+        "0.0.0.0/1",
+        "128.0.0.0/1"
+      ],
+      "inet6_route_address": [
+        "::/1",
+        "8000::/1"
+      ],
+      "inet4_route_exclude_address": [
+        "192.168.0.0/16"
+      ],
+      "inet6_route_exclude_address": [
+        "fc00::/7"
+      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
