@@ -342,12 +342,10 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
         "all",
-        "all-auto",
         "direct"
       ],
-      "default": "all-auto"
+      "default": "hk-auto"
     },
     {
       "tag": "google",
@@ -364,9 +362,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -385,9 +381,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -406,9 +400,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -427,9 +419,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
@@ -448,9 +438,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -469,9 +457,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
@@ -490,9 +476,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -559,22 +543,6 @@
       "tolerance": 50
     },
     {
-      "tag": "us-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
-      "tag": "all-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
@@ -589,9 +557,7 @@
         "sg",
         "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
